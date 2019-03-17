@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+}
+body{
+    background: url('images/navbar-background.svg');
+    /* background-size:cover; */
+    background-repeat: no-repeat;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar{
+    font-size: 1.4rem;
+    color: white;
+}
+.right{
+    float: right;
+}
+
+.navbar ul{
+    display: inline;
+    margin: 3rem;   
+}
+
+.navbar ul li{
+    display: inline;
+    padding: 1rem;
+}
+
+/* Head Styling */
+.header{
+    padding: 14rem;
+    text-align:center;
+}
+
+.header h1{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.header h2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.header p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
