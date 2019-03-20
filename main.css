@@ -1,21 +1,20 @@
-
-
-
-:root{
+:root {
     --green: #00AB95;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 14px;
     font-family: Lato, sans-serif;
 }
-body{
+
+body {
     background: url('images/navbar-background.svg');
     /* background-size:cover; */
     background-repeat: no-repeat;
@@ -24,58 +23,63 @@ body{
 }
 
 /* Navbar Styling */
-.navbar{
+
+.navbar {
     font-size: 1.4rem;
     color: white;
 }
 
-.left{
-    position:relative;
+.left {
+    position: relative;
     left: 1rem;
     bottom: 1.5rem;
 }
-.right{
+
+.right {
     float: right;
     padding: 1rem;
     width: 5rem;
 }
 
-.navbar ul{
+.navbar ul {
     display: inline;
-    margin: 2rem;   
+    margin: 2rem;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: inline;
     margin: 1rem;
 }
 
-#logo{
-    width:3.5rem;
-    margin: 1rem -1rem;;
+#logo {
+    width: 3.5rem;
+    margin: 1rem -1rem;
+    ;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-
 /* Head Styling */
-.header{
-    padding: 14rem;
-    text-align:center;
+
+.header {
+    padding: 10rem;
+    text-align: center;
 }
 
-.header h1{
+.header h1 {
     font-size: 4rem;
     font-weight: 300;
 }
-.header h2{
+
+.header h2 {
     font-size: 3rem;
     font-weight: 300;
 }
-.header p{
+
+.header p {
     width: 80%;
     margin: 0 auto;
     padding: 3rem;
@@ -85,17 +89,27 @@ a{
 
 /* sns icon */
 
-
-
-svg:hover{
+svg:hover {
     fill: black;
 }
 
-
-#change{
+#change {
+    /* for deisng */
     color: var(--green);
+    opacity: 0.5;
     font-weight: 700;
     position: absolute;
+    top: 10rem;
+    left: 2rem;
     font-size: 3rem;
     z-index: -1;
+    /* for transtion */
+    transition: transform 1s;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.out {
+    transform: scale(0);
 }
