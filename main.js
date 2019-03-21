@@ -1,5 +1,6 @@
-// // express router
+// // // express router
 
+// let variable = 'hola'
 // const express = require('express')
 // const app = express()
 
@@ -12,10 +13,11 @@
 //   app.use(express.static('public'));
 
 //   app.get('/',(req,res,next)=>{
-//     // res.render('statics/case')
+//     res.render('statics/case')
 // })
+
+
 // make background change
-// const symbols = ['Ai', '</>', '{;}', '$(#)']
 
 const symbols = ['HTML', 'CSS', 'JavaScript','Ai'];
 let count = 0;
