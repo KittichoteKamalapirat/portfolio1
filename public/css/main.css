@@ -1,0 +1,128 @@
+:root {
+    --green: #00AB95;
+    --dark-grey: rgb(77,77,77);
+    --pale-grey: rgb(128,128,128);
+    --super-pale-grey: rgb(230,230,230);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    background: url('/images/navbar/navbar-background.svg');
+    /* background-size:cover; */
+    background-repeat: no-repeat;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+/* Navbar Styling */
+
+.navbar {
+    font-size: 1rem;
+    color: white;
+}
+
+.left {
+    position: relative;
+    left: 1rem;
+    bottom: 1.5rem;
+}
+
+.navbar ul {
+    display: inline;
+    margin: 2rem;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+.navbar img{
+    width: 2rem;
+}
+
+
+.right {
+    float: right;
+}
+
+#logo {
+    width: 2rem;
+}
+.left {
+    float: left;
+    position: relative;
+    top: 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Head Styling */
+
+.header {
+    padding: 7rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.header h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* sns icon */
+
+svg:hover {
+    fill: black;
+}
+
+#change {
+    /* for deisng */
+    color: var(--green);
+    opacity: 0.5;
+    font-weight: 700;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-size: 3rem;
+    z-index: -1;
+    /* for transtion */
+    transition: transform 1s;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.out {
+    transform: scale(0) rotate(30deg);
+}

@@ -1,0 +1,30 @@
+
+body{
+    background-color:RGB(26,26,26);
+    color: white;
+}
+
+.wrapper{
+    display: grid;
+    width: 90%;
+    margin: 2% auto;
+    grid-template-columns: 50% 50%;
+}
+
+.case-thumbnail{
+    margin: 2%;
+}
+.flex{
+    display: flex;
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        display: grid;
+        margin: 2% auto;
+        grid-template-columns: 100%;
+    }
+    .case-thumbnail{
+        margin: 1%;
+    }
+}
