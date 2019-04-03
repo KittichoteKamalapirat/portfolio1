@@ -34,7 +34,7 @@ app.get('/case/tedx-website', (req, res) => {
 });
 
 app.get('/case/portfolio-website', (req, res) => {
-  res.sendFile('portfolio.html',{ root: path.join( __dirname, 'views/statics')});
+  res.sendFile('portfolio-website.html',{ root: path.join( __dirname, 'views/statics')});
 });
 
 app.get('/case/gochiso', (req, res) => {
