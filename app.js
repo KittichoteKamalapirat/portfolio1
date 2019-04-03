@@ -49,6 +49,18 @@ app.get('/case/thirty-logo-challenge', (req, res) => {
   res.sendFile('thirty-logo-challenge.html',{ root: path.join( __dirname, 'views/statics')});
 });
 
+
+app.get('/project',(req,res,next)=> {
+  res.sendFile('project.html', { root: path.join( __dirname, 'views/statics')})
+
+})
+
+
+app.get('/project/portfolio-website',(req,res,next)=> {
+  res.sendFile('portfolio-website.html', { root: path.join( __dirname, 'views/statics')})
+
+})
+
 // app.get('/case/:case',(req, res)=>{
 //   res.sendFile(path.join(__dirname, 'views/statics/case', req.params.case));
 // })
