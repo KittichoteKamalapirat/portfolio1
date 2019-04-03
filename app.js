@@ -25,8 +25,28 @@ app.get('/case',(req,res,next)=> {
 
 })
 
-app.get('/haha', (req, res) => {
-  res.render('index.ejs',{ root: path.join( __dirname, 'views/statics')});
+app.get('/case/junction', (req, res) => {
+  res.sendFile('junction.html',{ root: path.join( __dirname, 'views/statics')});
+});
+
+app.get('/case/tedx-website', (req, res) => {
+  res.sendFile('tedx-website.html',{ root: path.join( __dirname, 'views/statics')});
+});
+
+app.get('/case/portfolio-website', (req, res) => {
+  res.sendFile('portfolio.html',{ root: path.join( __dirname, 'views/statics')});
+});
+
+app.get('/case/gochiso', (req, res) => {
+  res.sendFile('gochiso.html',{ root: path.join( __dirname, 'views/statics')});
+});
+
+app.get('/case/tedx-flyer', (req, res) => {
+  res.sendFile('tedx-flyer.html',{ root: path.join( __dirname, 'views/statics')});
+});
+
+app.get('/case/thirty-logo-challenge', (req, res) => {
+  res.sendFile('thirty-logo-challenge.html',{ root: path.join( __dirname, 'views/statics')});
 });
 
 // app.get('/case/:case',(req, res)=>{
