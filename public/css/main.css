@@ -19,9 +19,8 @@ html {
 
 body {
     /* background: url('/images/navbar/navbar-background.svg'); */
-    background-color: #00AB95;
     /* background-size:cover; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-color: #1A1A1A;
     color: white;
 }
@@ -29,16 +28,30 @@ body {
 img {
     width: 100%;
 }
-
 /* Navbar Styling */
-/* 
 .navbar {
     font-size: 1rem;
-    padding: 1rem;
-    background-color: #00AB95;
+    padding: 0.5rem;
+    /* background-color: #00AB95; */
+    height: 4rem;
     color: white;
-} */
+} 
 
+.header__bg {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: #00AB95;
+    transform: skewY(-1.3deg);
+    transform-origin: top left;
+  }
+
+  
 .left {
     position: relative;
     left: 1rem;
@@ -48,7 +61,7 @@ img {
 ul {
     /* display: inline; */
     width: 100%;
-    margin: 2rem;
+    margin: 0 1rem;
     padding-right: 2rem;
 }
 
@@ -118,7 +131,8 @@ a {
 }
 
 .header p {
-    width: 80%;
+    min-width: 600px;
+    text-align:center;
     margin: 0 auto;
     padding: 3rem;
     font-size: 1rem;
@@ -158,7 +172,7 @@ svg:hover {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     * {
         margin: 0;
         padding: 0;
@@ -170,6 +184,7 @@ svg:hover {
         background-repeat: no-repeat;
         background-color: #1A1A1A;
         color: white;
+        overflow-x: hidden;
     }
     html {
         font-size: 16px;
@@ -187,28 +202,24 @@ svg:hover {
     .header p {
         font-size: 1.2rem;
         width: 100%;
+        min-width: 400px;
     }
     .toggle {
         display: block;
+        position: absolute;
     }
     .navbar{
-        background-color: #00AB95;
+        padding:1rem;
+        font-size: 1.5rem;
     }
-    /* .navbar::after {
-        content: "";
-        background-color: #00AB95;
-        background: url("/images/navbar/logo.svg");
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        width: 2rem;
-        margin: 1rem auto;
-        height: 2rem;
-    } */
     ul {
-        margin: 0;
-        background-color: var(--green);
         display: none;
+        z-index: 1000;
+        width: 100%;
+        line-height: 4rem;
+        padding: 0 0 2rem 0;
+        margin: 0;
+        background-color: #00AB95;
     }
     ul li {
         display: block;
@@ -216,8 +227,13 @@ svg:hover {
         float: none;
         text-align: center;
     }
-    ul li .right-nav {
+
+    #github{
+        margin-left: 3rem;
+    }
+    ul .right-nav {
         display: inline-block;
+        margin: 0 5%;
     }
     ul li:first-child {
         float: none;
