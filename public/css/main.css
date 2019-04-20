@@ -31,14 +31,13 @@ img {
 /* Navbar Styling */
 .navbar {
     font-size: 1rem;
-    padding: 0.5rem;
     /* background-color: #00AB95; */
     height: 4rem;
     color: white;
 } 
 
 .header__bg {
-    z-index: -10;
+    z-index: -1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -184,7 +183,6 @@ svg:hover {
         background-repeat: no-repeat;
         background-color: #1A1A1A;
         color: white;
-        overflow-x: hidden;
     }
     html {
         font-size: 16px;
@@ -194,27 +192,19 @@ svg:hover {
         width: 100%;
         padding: 0;
         margin-top: 8rem;
-        /* position: absolute; */
-        /* top: 50%; */
-        /* transform: translateY(-50%); */
-        z-index: -1;
     }
     .header p {
         font-size: 1.2rem;
         width: 100%;
-        min-width: 400px;
+        /* min-width: 400px; */
     }
     .toggle {
         display: block;
         position: absolute;
     }
-    .navbar{
-        padding:1rem;
-        font-size: 1.5rem;
-    }
+
     ul {
         display: none;
-        z-index: 1000;
         width: 100%;
         line-height: 4rem;
         padding: 0 0 2rem 0;
