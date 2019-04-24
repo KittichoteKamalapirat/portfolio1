@@ -7,34 +7,19 @@
     <title>Kittichote Kamalapirat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/junction.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/cases.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/case.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="/css/hamburgers.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="navbar">
-        <ul>
-
-            <li class="left"><a href="/"><img id="logo" src="/images/navbar/logo.svg" alt="Kittichote Kamalapirat"></a>
-            </li>
-            <li class="left"><a href="/projects">projects</a></li>
-            <li class="left"><a href="/case">case studies</a></li>
-            <li class="right"><a href="https://github.com/KittichoteKamalapirat" target="_blank"><img id="github"
-                        src="/images/navbar/github.svg" alt="github"></a></li>
-            <li class="right">
-                <a"><img src="/images/navbar/gmail.svg" alt="gmail"></a>
-            </li>
-            <li class="right"><a href="https://www.linkedin.com/in/kittichote-kamalapirat-076aaa120/"
-                    target="_blank"><img src="/images/navbar/linkedin.svg" alt="linkedin"></a></li>
-            <li class="right"><a id="resume" href="../../public/images/navbar/2018resume.pdf"
-                    download="resume-Kittichote-Kamalapirat"><img src="/images/navbar/resume.svg" alt="resume"></a></li>
-        </ul>
-    </div>
+        <% include ../partials/navbar.ejs%>
 
     <div class="case-container">
         <h1 class="case-title">TEDxYNU Flyer</h1>
         <h2>Background</h2>
+        <p>As a front end developer and aspiring graphic designer, I’ve noticed a frightening trend, especially on the online world. Everyone complains about how all Instagram photos all look the same (and yes, they do), web aesthetics are going down the same route, if it’s not already there.</p>
         <p>At our TEDxYNU club, we look for new members every semester we we can continually organizing the events every
             year. Since the semester will start next month and we would like to make as many new student as possible to
             get to know our club, we would like to print flyers and put them into the club flyers bag which is a bag
@@ -84,13 +69,13 @@
         </div>
         <p class="image-description">Final version of the flyer</p>
         <div class="center">
-            <img class="half-width" src="/images/case/tedx-flyer/mockup.png" alt="print mockup of the flyer">
+            <img class="full-width" src="/images/case/tedx-flyer/mockup.png" alt="print mockup of the flyer">
             <p class="image-description">Mockup before printing</p>
         </div>
 
 
     </div>
-    <script src="/images/main.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 
 </html>

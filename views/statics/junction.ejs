@@ -5,37 +5,23 @@
     <meta charset="utf-8">
     <title>Kittichote Kamalapirat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/junction.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/cases.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/case.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="/css/hamburgers.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- <img src="/images/navbar-background.svg" alt="navbar" id="navbar-background"> -->
-    <div class="navbar">
-            <ul>
-    
-                <li class="left"><a href="/"><img id="logo" src="/images/navbar/logo.svg" alt="Kittichote Kamalapirat"></a>
-                </li>
-                <li class="left"><a href="/projects">projects</a></li>
-                <li class="left"><a href="/case">case studies</a></li>
-                <li class="right"><a href="https://github.com/KittichoteKamalapirat" target="_blank"><img id="github"
-                            src="/images/navbar/github.svg" alt="github"></a></li>
-                <li class="right">
-                    <a"><img src="/images/navbar/gmail.svg" alt="gmail"></a>
-                </li>
-                <li class="right"><a href="https://www.linkedin.com/in/kittichote-kamalapirat-076aaa120/"
-                        target="_blank"><img src="/images/navbar/linkedin.svg" alt="linkedin"></a></li>
-                <li class="right"><a id="resume" href="../../public/images/navbar/2018resume.pdf"
-                        download="resume-Kittichote-Kamalapirat"><img src="/images/navbar/resume.svg" alt="resume"></a></li>
-            </ul>
-        </div>
+    <% include ../partials/navbar.ejs%>
 
-        <div class="case-container">
+    <div class="case-container">
         <h1 class="case-title">case studies: Junction hackathon</h1>
         <img src="/images/case/junction/junction.png" alt="Junction Introduction">
-        
+
         <img src="" alt="">
         <h3>Background</h3>
         <p>Junction is one of the biggest annual hackathon in the world. This year 2019 is the 3rd year of Junction
@@ -63,20 +49,29 @@
             <li>It matches the theme of this hackathon, either API for Ai</li>
         </ol>
         <h3>Objective</h3>
-        <p>This hackathon is actually the first experience for most of our members so we did not aim for winning whatsoever. Just to have fun at the hackathon kind of. However, we did believe that the problem we’re trying to solve is a serious one and genuinely tried to solve the problem. In short, our ultimate goal was to help those patients who are in need.</p>
+        <p>This hackathon is actually the first experience for most of our members so we did not aim for winning
+            whatsoever. Just to have fun at the hackathon kind of. However, we did believe that the problem we’re trying
+            to solve is a serious one and genuinely tried to solve the problem. In short, our ultimate goal was to help
+            those patients who are in need.</p>
         <h3>Result</h3>
-        <p>In hackathon, although we could not get the first prize, we were selected as finalists for the Ai for humanity path. Yay ! On the production side, we are still on the progress of making this service available to the public.</p>
+        <p>In hackathon, although we could not get the first prize, we were selected as finalists for the Ai for
+            humanity path. Yay ! On the production side, we are still on the progress of making this service available
+            to the public.</p>
 
         <h3>Reflection</h3>
-        <p>The good part is that we had a lot of fun during the hackathon. Also, I personally think I did pretty well with the design of the applicaton. </p>
-        <p>The bad part is that it took me so much time learning how to use NativeScript which is a technology I have never used before. Moreover, I am not good at working overnight so I just went back home by last train while most of my team members stayed overnight working at the hackathon venue. </p>
+        <p>The good part is that we had a lot of fun during the hackathon. Also, I personally think I did pretty well
+            with the design of the applicaton. </p>
+        <p>The bad part is that it took me so much time learning how to use NativeScript which is a technology I have
+            never used before. Moreover, I am not good at working overnight so I just went back home by last train while
+            most of my team members stayed overnight working at the hackathon venue. </p>
 
         <h3>My Role</h3>
-        <p>My role was a visual design fot the user interface. I tried to make the flow of the application as simple as possible so its easy for the back-end side to work smoothly.</p>
+        <p>My role was a visual design fot the user interface. I tried to make the flow of the application as simple as
+            possible so its easy for the back-end side to work smoothly.</p>
 
         <div>
-        <img class="split" src="/images/case/junction/welcome.png" alt="welcome to medeasy page">
-        <img class="split" src="/images/case/junction/what.png" alt="what is medeasy page">
+            <img class="split" src="/images/case/junction/welcome.png" alt="welcome to medeasy page">
+            <img class="split" src="/images/case/junction/what.png" alt="what is medeasy page">
         </div>
         <img class="split" src="/images/case/junction/signup.png" alt="signup page">
         <img class="split" src="/images/case/junction/profile.png" alt="profile page">
@@ -85,9 +80,7 @@
         <img class="split" src="/images/case/junction/caution.png" alt="caution page">
         <img class="split" src="/images/case/junction/" alt="">
     </div>
-
-
-    <script src="main.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 
 </html>
