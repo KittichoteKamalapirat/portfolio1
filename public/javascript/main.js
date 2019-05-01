@@ -23,6 +23,7 @@
 // iteration();
 
 // responsive navigation
+
 // turn 3 stripes to X
 $("#hamburger").click(function(){
   $("#hamburger").toggleClass("is-active")
@@ -31,4 +32,8 @@ $("#hamburger").click(function(){
 // toggle nav bar
 $("#hamburger").click(function(){
   $("ul").toggleClass("active")
+});
+
+$("#hamburger").click(function(){
+  $(".navbar").toggleClass("not-active")
 });

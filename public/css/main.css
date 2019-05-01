@@ -232,6 +232,19 @@ svg:hover {
         /* transition: display 2s; */
         
     }
+    .navbar::after{
+        content: url("/images/navbar/logo.svg");
+        display: block;
+        width: 2rem;
+        text-align: center;
+        margin: 0rem auto;
+        padding: 1rem;
+    }
+
+    .navbar.not-active::after{
+        display: none;
+    }
+
     ul li {
         display: block;
         clear: both;
