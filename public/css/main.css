@@ -124,13 +124,14 @@ a {
     font-size: 2.5rem;
     font-weight: 300;
 }
-
 .header h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 .header p {
+    width: 80%;
+    min-width: 600px;
     text-align:center;
     margin: 0 auto;
     padding: 3rem;
@@ -140,8 +141,11 @@ a {
 
 /* sns icon */
 
-svg:hover {
-    fill: black;
+.nav-icon:hover{
+    filter: invert(.5) brightness(0.6);
+}
+a:hover{
+    color: var(--dark-grey)
 }
 
 #change {
@@ -173,6 +177,62 @@ svg:hover {
     position:relative;
 }
 
+/* popup */
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    background-color: var(--green);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top:3rem;
+    margin-left: -5.5rem;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--green) transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    position: absolute;
+    z-index: 1000;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
 @media screen and (max-width: 720px) {
     * {
         margin: 0;
@@ -193,7 +253,7 @@ svg:hover {
     .header {
         width: 100%;
         padding: 0;
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
     .header__bg {
@@ -213,6 +273,7 @@ svg:hover {
     .header p {
         font-size: 1.2rem;
         width: 100%;
+        min-width: 0;
         /* min-width: 400px; */
     }
     .toggle {
@@ -232,7 +293,16 @@ svg:hover {
         /* transition: display 2s; */
         
     }
-    .navbar::after{
+    /* .navbar::after{
+        content: url("/images/navbar/logo.svg");
+        display: block;
+        width: 2rem;
+        text-align: center;
+        margin: 0rem auto;
+        padding: 1rem;
+    } */
+
+    .navbar .backtohome::after{
         content: url("/images/navbar/logo.svg");
         display: block;
         width: 2rem;
@@ -241,7 +311,8 @@ svg:hover {
         padding: 1rem;
     }
 
-    .navbar.not-active::after{
+
+    .navbar .backtohome.not-active::after{
         display: none;
     }
 

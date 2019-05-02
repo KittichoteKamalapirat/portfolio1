@@ -30,10 +30,15 @@ app.get('/', function(req, res) {
 app.get('/case', function(req, res) {
   res.render('statics/case');
 });
-app.get('/project',(req,res,next)=> {
+app.get('/project',(req,res)=> {
   res.render('statics/project')
 
 })
+
+
+app.get('/project/portfolio-website', (req, res) => {
+  res.render('statics/portfolio-website')
+});
 
 
 
@@ -64,11 +69,6 @@ app.get('/case/thirty-logo-challenge', (req, res) => {
 
 
 
-
-app.get('/project/portfolio-website',(req,res,next)=> {
-  res.sendFile('portfolio-website.html', { root: path.join( __dirname, 'views/statics')})
-
-})
 
 // app.get('/case/:case',(req, res)=>{
 //   res.sendFile(path.join(__dirname, 'views/statics/case', req.params.case));

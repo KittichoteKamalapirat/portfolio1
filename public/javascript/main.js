@@ -35,5 +35,11 @@ $("#hamburger").click(function(){
 });
 
 $("#hamburger").click(function(){
-  $(".navbar").toggleClass("not-active")
+  $(".backtohome").toggleClass("not-active")
 });
+
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
