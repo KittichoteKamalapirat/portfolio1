@@ -148,25 +148,51 @@ a:hover{
     color: var(--dark-grey)
 }
 
-#change {
+/* animation on the homepage  */
+.rotate1{
+    transform: rotate(-20deg);
+}
+.rotate2{
+    transform: rotate(10deg);
+}
+.rotate3{
+    transform: rotate(-10deg);
+}
+#change1, #change2, #change3 {
     /* for deisng */
-    color: var(--green);
     opacity: 0.5;
     font-weight: 700;
     position: absolute;
-    top: 10rem;
-    left: 2rem;
     font-size: 3rem;
     z-index: -1;
     /* for transtion */
-    transition: transform 1s;
+    transition: transform 2.5s;
     display: inline-block;
-    width: 200px;
+    width: 400px;
     text-align: center;
 }
 
+#change1{
+    color: var(--green);
+    top: -10rem;
+    left: -4rem;
+    font-size: 3rem
+}
+#change2{
+    color: #00E8CB;
+    top: -6rem;
+    right: -4rem;
+    font-size: 2rem
+}
+#change3{
+    color: #A3D8D1;
+    top: 10rem;
+    right: 30rem;
+    font-size: 4rem
+}
+
 .out {
-    transform: scale(0) rotate(30deg);
+    transform: scale(0);
 }
 
 /* for responsive */
