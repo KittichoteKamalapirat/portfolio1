@@ -281,7 +281,7 @@ a:hover{
         position: absolute;
     }
 
-    ul {
+    .hidden-nav {
         display: none;
         z-index: 10;
         position: relative;
