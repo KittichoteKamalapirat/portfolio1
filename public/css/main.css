@@ -370,4 +370,17 @@ a:hover{
     .active {
         display: block;
     }
+
+    #change1, #change3{
+        display:none;
+    }
+
+    #change2{
+        font-size: 5rem;
+        top: 14rem;
+        right: 0rem;
+    }
+    .rotate2{
+        transform: rotate(0deg);
+    }
 }
