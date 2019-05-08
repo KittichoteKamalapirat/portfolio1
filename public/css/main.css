@@ -371,16 +371,19 @@ a:hover{
         display: block;
     }
 
-    #change1, #change3{
-        display:none;
+    #change1{
+        top: -6rem;
+        left: -8rem;
+    }
+    
+    #change2{
+        top: -4.5rem;
+        left: 5rem;
     }
 
-    #change2{
-        font-size: 5rem;
-        top: 14rem;
-        right: 0rem;
+    #change3{
+        top: 20rem;
+        right: 2rem;
     }
-    .rotate2{
-        transform: rotate(0deg);
-    }
+   
 }
