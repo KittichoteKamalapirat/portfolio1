@@ -15,15 +15,13 @@
 html {
     font-size: 20px;
     font-family: Lato, sans-serif;
-    /* overflow-x: hidden */
+    overflow-x: hidden;
 }
 
 body {
-    /* background: url('/images/navbar/navbar-background.svg'); */
-    /* background-size:cover; */
-    /* background-repeat: no-repeat; */
     background-color: #1A1A1A;
     color: white;
+    overflow-x: hidden;
 }
 
 img {
@@ -374,6 +372,7 @@ a:hover{
     #change1{
         top: -6rem;
         left: -8rem;
+        font-size: 1.5rem;
     }
     
     #change2{
@@ -382,6 +381,7 @@ a:hover{
     }
 
     #change3{
+        font-size: 2rem;
         top: 20rem;
         right: 2rem;
     }
