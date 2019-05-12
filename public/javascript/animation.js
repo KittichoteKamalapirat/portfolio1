@@ -1,6 +1,7 @@
 // make background change
 
-const symbols = ['Ai', 'CSS', 'JavaScript','HTML',"jQuery","Node"];
+const symbols = ['Ai', '{ }', 'JS','</>',"$","node"];
+
 let count1 = 0;
 const element1 = document.getElementById("change1");
 const iteration1 = () => {

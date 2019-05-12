@@ -22,3 +22,12 @@ function popupFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+// randomly recommend projects
+const projects = ['gochiso','junction','portfolio-website','tedx-flyer','tedx-website','thirty-logo-challenge']
+const randomNum = Math.floor(Math.random() * projects.length);
+const randomProject = projects[randomNum]
+
+console.log(randomNum)
+console.log(randomProject)
+
