@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Kittichote Kamalapirat</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/cases.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link href="/css/hamburgers.css" rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/cases.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
+      rel="stylesheet"
+    />
+    <link href="/css/hamburgers.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <% include ../partials/navbar.ejs%>
     <div class="header">
-        <h1>Projects</h1>
-        <% include ../partials/animation.ejs%>
-        <p>I always like creating new things. The more you practice, the better you become. Practice makes perfect !</p>
+      <h1>Projects</h1>
+      <% include ../partials/animation.ejs%>
+      <p>
+        I always like creating new things. The more you practice, the better you
+        become. Practice makes perfect !
+      </p>
     </div>
     <div class="wrapper">
-            <a href='/case/portfolio-website'>
-                <div class="img__wrap case-thumbnail">
-                    <img class="img__img" src="/images/case/portfolio-website.svg" alt="Portfolio Website Thumbnail" />
-                    <div id="portfolio-thumbnail" class="img__description_layer ">
-                        <div class="img__description">
-                            <h2>My Portfolio</h2>
-                            <p>User Experience</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
+      <a href="/case/portfolio-website">
+        <div class="img__wrap case-thumbnail">
+          <img
+            class="img__img"
+            src="/images/case/portfolio-website.svg"
+            alt="Portfolio Website Thumbnail"
+          />
+          <div id="portfolio-thumbnail" class="img__description_layer ">
+            <div class="img__description">
+              <h2>My Portfolio</h2>
+              <p>Web Design, User Experience</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="http://orenoo.com" target="_blank">
+        <div class="img__wrap case-thumbnail">
+          <img
+            class="img__img"
+            src="/images/project/orenoo.png"
+            alt="Orenoo Thumbnail"
+          />
+          <div id="orenoo-thumbnail" class="img__description_layer ">
+            <div class="img__description">
+              <h2>Orenoo | Education App</h2>
+              <p>MERN Stack</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="http://panaco.org" target="_blank">
+        <div class="img__wrap case-thumbnail">
+          <img
+            class="img__img"
+            src="/images/project/panaco.png"
+            alt="Panaco Thumbnail"
+          />
+          <div id="panaco-thumbnail" class="img__description_layer ">
+            <div class="img__description">
+              <h2>Panaco Website</h2>
+              <p>Web Design, User Experience</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="http://ideatoshare.com" target="_blank">
+        <div class="img__wrap case-thumbnail">
+          <img
+            class="img__img"
+            src="/images/project/ideatoshare.png"
+            alt="IdeatoShare Thumbnail"
+          />
+          <div id="ideatoshare-thumbnail" class="img__description_layer ">
+            <div class="img__description">
+              <h2>IDEATOSHARE | Idea Sharing Platform</h2>
+              <p>MERN STACK</p>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
     <script src="/javascript/main.js"></script>
     <script src="/javascript/animation.js"></script>
-</body>
-
+  </body>
 </html>

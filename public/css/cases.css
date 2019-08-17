@@ -1,107 +1,117 @@
-
-body{
-    background-color:RGB(26,26,26);
-    color: white;
+body {
+  background-color: RGB(26, 26, 26);
+  color: white;
 }
 
-.wrapper{
-    display: grid;
-    width: 90%;
-    margin: 2% auto;
-    grid-template-columns: 50% 50%;
+.wrapper {
+  display: grid;
+  width: 90%;
+  margin: 2% auto;
+  grid-template-columns: 50% 50%;
 }
 
-.case-thumbnail{
-    margin: 2%;
+.case-thumbnail {
+  margin: 2%;
 }
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
 /* _____________animation for case page______________ */
 
 /* quick reset and base styles */
 
-  /* relevant styles */
-  .img__wrap {
-    position: relative;
-  }
-  
-  .img__description_layer {
-    position: absolute;
-    height: 99.5%;
-    line-height: 2rem;
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-  }
+/* relevant styles */
+.img__wrap {
+  position: relative;
+}
 
-  .img__description_layer p {
-      font-style: italic;
-      font-weight: 100;
-  }
-  
-  #portfolio-thumbnail{
-    background: rgba(0, 171, 149, 0.9);
-  }
-  
-  #gochiso-thumbnail{
-    background: rgba(214, 130, 62, 0.9);
-  }
+.img__description_layer {
+  position: absolute;
+  height: 99.5%;
+  line-height: 2rem;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
 
-  #tedx-flyer-thumbnail{
-    background: rgba(233, 80, 47, 0.9);
-  }
+.img__description_layer p {
+  font-style: italic;
+  font-weight: 100;
+}
 
-  #tedx-website-thumbnail{
-    background: rgba(233, 80, 47, 0.9);
-  }
+#portfolio-thumbnail {
+  background: rgba(0, 171, 149, 0.9);
+}
 
-  #junction-thumbnail{
-    background: rgba(0, 159, 227, 0.9);
-  }
+#gochiso-thumbnail {
+  background: rgba(214, 130, 62, 0.9);
+}
 
-  #thirty-logo-challenge-thumbnail{
-    background: rgba(26, 26, 26, 0.9);
-  }
+#orenoo-thumbnail {
+  background: #00c58e;
+}
 
-  
-  .img__wrap:hover .img__description_layer {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .img__description {
-    transition: .2s;
-    transform: translateY(1em);
-  }
-  
-  .img__wrap:hover .img__description {
-    transform: translateY(0);
-  }
+#ideatoshare-thumbnail {
+  background: #dc4760;
+}
 
-@media screen and (max-width: 700px){
+#panaco-thumbnail {
+  background: #67c4e7;
+}
+
+#tedx-flyer-thumbnail {
+  background: rgba(233, 80, 47, 0.9);
+}
+
+#tedx-website-thumbnail {
+  background: rgba(233, 80, 47, 0.9);
+}
+
+#junction-thumbnail {
+  background: rgba(0, 159, 227, 0.9);
+}
+
+#thirty-logo-challenge-thumbnail {
+  background: rgba(26, 26, 26, 0.9);
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: 0.2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 700px) {
   /* for case home page */
-    .header{
-      margin-top: 2rem;
-    }.wrapper{
-        display: grid;
-        margin: 2% auto;
-        grid-template-columns: 100%;
-    }
-    .case-thumbnail{
-        margin: 1%;
-    }
-    /* for each case page */
-
+  .header {
+    margin-top: 2rem;
+  }
+  .wrapper {
+    display: grid;
+    margin: 2% auto;
+    grid-template-columns: 100%;
+  }
+  .case-thumbnail {
+    margin: 1%;
+  }
+  /* for each case page */
 }
