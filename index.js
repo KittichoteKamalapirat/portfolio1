@@ -20,7 +20,8 @@ app.listen(PORT, () => {
 
 // index page
 app.get("/", function (req, res) {
-  res.render("./statics/index");
+  console.log("__dirname", __dirname);
+  res.render("statics/index");
 });
 
 app.get("/case", function (req, res) {
